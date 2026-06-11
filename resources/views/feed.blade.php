@@ -25,7 +25,7 @@
                     </div>
                 @endif
             </div>
-                <form action="{{url('/feed')}}" class=" text-center pt-5 pb-20" method="POST">
+                <form action="{{ route('feed.form'}}" class=" text-center pt-5 pb-20" method="POST">
                     @csrf
                     <span class="text-3xl text-extrabold text-gray-200">Hey, </span>
                     <span class="text-3xl bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent  font-bold mb-4">{{$name}}</span><br>
